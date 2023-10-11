@@ -14,11 +14,7 @@ const enum DaysOfWeek {
 }
 
 function isWeekend(day: DaysOfWeek): boolean {
-  if (day === 6 || 7) {
-    return false;
-  } else {
-    return true;
-  }
+  return day === 6 || day === 7;
 }
 
-console.log(isWeekend(DaysOfWeek.Saturday));
+console.log(isWeekend(DaysOfWeek.Friday));
